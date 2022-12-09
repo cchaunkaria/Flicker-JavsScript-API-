@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+li{
+    list-style: none;
+}
+
+.green{
+    color: rgb(9 106 46);
+}
+
+.black{
+    color: black;
+}
+
+/** 
+
+NAV
+
+**/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100px;
+}
+
+
+.nav__links{
+    display: flex;
+    align-items: center;
+}
+
+.nav__link{
+    margin: 0 24px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.link__hover-effect{
+    display: inline-block;
+    position: relative;
+    color: rgb(9 106 46);
+}
+
+.link__hover-effect:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(9 106 46);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link__hover-effect:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.btn__contact{
+    outline-style: auto;
+    padding: 8px 24px;
+    color: white;
+    background-color: rgb(9 106 46);
+    border-color: rgb(9 106 46);
+    border-radius: 24px;
+    transition: 300ms ease;
+}
+
+.btn__contact:hover{
+    background-color: rgb(50, 168, 95);
+    cursor: pointer;
+}
+
+.logo{
+    width: 8em;
+    height: 8em;
+}
+
+/* 
+
+LANDING PAGE
+
+*/
+
+#landing-page{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header{
+    font-size: 32px;
+}
+
+.title{
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.input__container{
+    padding: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    width: 40%;
+    padding: 16px;
+    font-size: 24px;
+    border: 2px solid rgb(9 106 46);
+    border-radius: 24px;
+    margin-right: 16px;
+}
+
+.btn__search{
+    width: 10%;
+    font-size: 24px;
+    border-radius: 24px;
+    background-color: rgb(9 106 46);
+    border: 2px solid rgb(9 106 46);
+    color: whitesmoke;
+    transition: 300ms ease;
+}
+
+.btn__search:hover{
+    background-color: rgb(50, 168, 95);
+    border: 2px solid rgb(50, 168, 95);
+    cursor: pointer;
+}
+
+.img__cinema{
+    display: block;
+    margin: 0 auto;
+}
+
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+}
+
+.movie-card__container{
+    padding: 8px;
+}
+
+
+
+
+
+

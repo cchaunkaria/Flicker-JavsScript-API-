@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flicker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+    src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <section id="landing-page" class="navBar">
+      <nav>
+        <figure>
+          <img
+            class="logo"
+            src="./assets/flicker-low-resolution-logo-white-on-transparent-background.png"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__links">
+          <li><a href="#" class="nav__link link__hover-effect">Home</a></li>
+          <li>
+            <a href="#" class="nav__link link__hover-effect">Find your movie</a>
+          </li>
+          <li><button class="btn__contact nav__link">CONTACT</button></li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__description">
+          <h1 class="green title">
+            Canada's most awarded <br> movie subscription platform
+          </h1>
+          <h2 class="title">
+            Find your motion picture with <span class="green"> Flicker</span>
+          </h2>
+          <div class="input__container">
+            <input
+              id="userInput"
+              type="text"
+              class="search"
+              placeholder="Search by Title, Genre, or Keyword"
+            />
+            <button class="btn__search" onclick="Search()"><i class="fas fa-search fa-lg"></i></button>
+          </div>
+        </div>
+      </header>
+      <figure>
+          <img src="/assets/cinema.png" class="img__cinema" alt="" srcset="" >
+      </figure>
+      <div class="container">
+        <div class="row">
+            <div class="movie-list" id="movie-list" onclick=showMovies(event)>
+                <div class="movie">
+                    <div class="movie-card">
+                        <div class="movie-card__container">
+                            <img src="" alt="">
+                            <p><b>Title:</b> movie title </p>
+                            <p><b>Type:</b> movie  </p>
+                            <p><b>Year:</b> 1997 </p>
+                            <p><b>imdb ID:</b> movie id </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
